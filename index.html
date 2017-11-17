@@ -70,7 +70,7 @@
 							<li><a href="#verify" data-toggle="tab"><span class="glyphicon glyphicon-ok"></span> Verify</a></li>
 							<li><a href="#sign" data-toggle="tab"><span class="glyphicon glyphicon-pencil"></span> Sign</a></li>
 							<li><a href="#broadcast" data-toggle="tab"><span class="glyphicon glyphicon-globe"></span> Broadcast</a></li>
-							<li><a href="#wallet" data-toggle="tab"><span class="glyphicon glyphicon-briefcase"></span> Wallet</a></li>
+<!-- 							<li><a href="#wallet" data-toggle="tab"><span class="glyphicon glyphicon-briefcase"></span> Wallet</a></li> -->
 							<li><a href="#about" data-toggle="tab"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
 
 							<li class="hidden"><a href="#settings" data-toggle="tab"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
@@ -87,14 +87,14 @@
 					<div class="tab-pane tab-content active" id="home">
 						<div class="row">
 							<div class="col-md-12">
-								<h2>MultiSig.it <small>Improved security</small></h2>
+								<h2>MultiSig.it <small>Multisig via Twitter authentication</small></h2>
 							</div>
 						</div>
 
 						<div class="jumbotron">
-							<h1>Bitcoin. It's your money!</h1>
-							<p>Be your own bank, take control of your own money and start using Bitcoin today!</p>
-							<p><a class="btn btn-primary btn-lg" href="#about" role="button">Learn more &raquo;</a></p>
+							<h1>Create Bitcoin multisignature addresses</h1>
+							<p>Use <i>n</i> of <i>m</i> BTC multisignature addrresses to add security and collaborate with others on the Bitcoin blockchain.</p>
+							<p><a class="btn btn-primary btn-lg" href="#newMultiSig" role="button">Create multisig addresses &raquo;</a></p>
 						</div>
 
 						<hr>
@@ -117,10 +117,10 @@
 						</div>
 
 						<div class="row">
-							<div class="col-md-4">
+				<!-- 			<div class="col-md-4">
 								<h3><span class="glyphicon glyphicon-piggy-bank"></span> Wallet</h3>
 								<p>Quick access to an <a href="#wallet">online wallet</a> where only you have access to your own private keys!</p>
-							</div>
+							</div> -->
 
 							<div class="col-md-4">
 								<h3><span class="glyphicon glyphicon-globe"></span> Addresses</h3>
@@ -134,7 +134,7 @@
 						</div>
 					</div>
 
-					<div class="tab-pane tab-content" id="wallet">
+					<!-- <div class="tab-pane tab-content" id="wallet">
 						<div class="row">
 							<div class="col-md-12">
 								<h2>Open Wallet <small> browser based bitcoin wallet</small></h2>
@@ -261,7 +261,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
 					<div class="tab-pane tab-content" id="newAddress">
 						<h2>New Address <small>create a new address</small></h2>
@@ -375,9 +375,9 @@
 								<p>Enter the public keys of all the participants, to create a <a href="https://en.bitcoin.it/wiki/Address#Multi-signature_addresses" target="_blank">multi signature address</a>. Maximum of 15 allowed. Compressed and uncompressed public keys are accepted.</p>
 							</div>
 
-							<div class="col-md-3">
+<!-- 							<div class="col-md-3">
 								<p class="alert alert-info"><span class="glyphicon glyphicon-info-sign"></span> <a href="javascript:;" data-toggle="modal" data-target="#modalMediator"><abbr>Need a Mediator?</abbr></a></p>
-							</div>
+							</div> -->
 
 							<div class="col-md-1">
 							</div>
@@ -1053,7 +1053,7 @@
 
 					<div class="tab-pane tab-content" id="about">
 						<h2>About <small>multisig.it</small></h2>
-						<!-- <p>Version 1.3</p>
+						<!-- <p>Version 0.2</p>
 						<p>Compatible with bitcoin-qt</p>
 						<p>Github <a href="https://github.com/OutCast3k/coinbin/">https://github.com/OutCast3k/coinbin/</a></p>
 						<p>TOR <a href="http://4zpinp6gdkjfplhk.onion">4zpinp6gdkjfplhk.onion</a></p>
@@ -1171,7 +1171,9 @@
 					</div>
 
 					<br>
-					<p class="text-muted">This page uses javascript to generate your addresses and sign your transactions within your browser, this means we <i>never</i> receive your private keys, this can be independently verified by reviewing the source code on <a href="https://github.com/OutCast3k/coinbin/" target="_blank">github</a>. You can even <a href="https://github.com/OutCast3k/coinbin/archive/master.zip">download</a> this page and host it yourself or run it offline!</p>
+					<p class="text-muted">This page uses javascript to generate your addresses and sign your transactions within your browser, this means we <i>never</i> receive your private keys, this can be independently verified by reviewing the source code on <a href="https://github.com/toneloc/multisigit" target="_blank">github</a>. You can also download this page and host it yourself or run it offline!</p>
+					<br>
+					<p class="text-muted">You can also download this page and host it yourself or run it offline!</p>
 					<br>
 
 				</div>
@@ -1180,7 +1182,7 @@
 
 		<div id="footer">
 			<div class="container text-right">
-	        		<p class="text-muted">Version 1.3</p>
+	        		<p class="text-muted">Version 0.2</p>
 			</div>
 		</div>
 
@@ -1262,7 +1264,7 @@
 	<!-- qrcode scanner modal -->
 
 	<!-- mediator modal -->
-	<div class="modal fade" id="modalMediator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<!-- <div class="modal fade" id="modalMediator" tabindex="-1" role="dialog" aria-	labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -1278,12 +1280,10 @@
 						<div class="col-md-5">
 							<label>Mediator:</label>
 
-							<!-- 
 								You need to contact us before adding your pubkey 
 								and submitting a pull request on github. 
 
 								format is: pubkey;email;fee
-							-->
 
 							<select id="mediatorList" class="form-control">
 								<option value="02b6231cc602740c29436eafbb6448880f4058cc3d2745c709deee313104678277;support@coinb.in;1">Coinb.in</option>
@@ -1314,7 +1314,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- mediator modal -->
 
 
