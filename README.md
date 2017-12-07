@@ -1,33 +1,31 @@
-coinbin
+multisig.it
 =======
 
-A Open Source Browser Based Bitcoin Wallet. Version 1.3 beta by OutCast3k
+A client-side open source browser-based Bitcoin wallet with a focus on Multisignature hosted by [@tonklaus](https://www.twitter.com/tonklaus). Based on http://coinb.in/. Similar Tor site at http://4zpinp6gdkjfplhk.onion.
 
-Live version available at http://coinb.in/ or http://4zpinp6gdkjfplhk.onion
+Ethereum Multsig to be added after some more research. 
 
-Github URL: https://github.com/OutCast3k/coinbin/
+Supports a number of key features such as: 
 
-Coinb.in supports a number of key features such as: 
-
-- Offline Compressed & uncompressed Address creation.
-- Offline Multisignature Address creation.
-- "In browser" Key (re)generation. 
+- Offline compressed & uncompressed address (and pubilc and private key) creation.
+- Offline multisignature address creation. Information about multsig.
+<!-- - "In browser" key (re)generation.  -->
 - Send and receive payments.
 - Ability to decode transactions, redeem scripts and more offline.
 - Build custom transactions offline.
 - Sign transactions offline.
-- Signatures are deterministic as per RFC 6979 (https://tools.ietf.org/html/rfc6979#section-3.2)
+<!-- - Signatures are deterministic as per RFC 6979 (https://tools.ietf.org/html/rfc6979#section-3.2) -->
 - Broadcast transactions.
 - nLockTime support.
 - Add custom data to transactions with the use of OP_RETURN.
-- Support current Dark Wallet Stealth Address structure (as of version Alpha 7) for outputs.
+<!-- - Support current Dark Wallet Stealth Address structure (as of version Alpha 7) for outputs. -->
 - Brain wallet support.
-- Compatible with bitcoin-qt
-- An offical .onion address for tor users.
+<!-- - Compatible with bitcoin-qt
+- An offical .onion address for tor users. -->
 - Offline qrcode creator and scanning tool
 - HD (bip32) support
 - Supports altcoins such as litecoin
-- Replace by fee (RBF) Support
+- Replace by fee (RBF) Suppsort
 - Segwit support
 
-Donate to 1CWHWkTWaq1K5hevimJia3cyinQsrgXUvg to see more development!
+Donate to the heroes at 1CWHWkTWaq1K5hevimJia3cyinQsrgXUvg.
