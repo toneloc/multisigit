@@ -588,6 +588,7 @@
 								<label>Null Data</label> <span class="text-muted text-normal">(80 byte limit, <i>40 bytes recommended</i>)</span>
 								<p class="checkbox">
 									<label><input type="checkbox" id="opReturn" class="checkbox-inline"> Allow data to be sent within the transaction and stored in the blockchain by using <a href="https://bitcoin.org/en/developer-guide#null-data" target="_"blank">OP_RETURN</a>.</label>
+
 									<div class="text-muted">When using this option you may enter a hex string or address into the address field on the output tab.</div>
 								</p>
 
@@ -1003,6 +1004,7 @@
 										<option value="3" rel="SIGHASH_SINGLE: The only output signed is the one corresponding to this input, ensuring nobody can change your part of the transaction but allowing other signers to change their part of the transaction.">SINGLE</option>
 										<option value="129" rel="SIGHASH_ALL|SIGHASH_ANYONECANPAY: Signs all of the outputs but only this one input, it allows anyone to add or remove other inputs, so anyone can contribute additional satoshis but they cannot change how many satoshis are sent nor where they go.">ALL|ANYONECANPAY</option>
 										<option value="130" rel="SIGHASH_NONE|SIGHASH_ANYONECANPAY: Signs only this one input and allows anyone to add or remove other inputs or outputs, so anyone who gets a copy of this input can spend it however they'd like.">NONE|ANYONECANPAY</option>
+
 										<option value="131" rel="SIGHASH_SINGLE|SIGHASH_ANYONECANPAY: Signs this one input and its corresponding output. Allows anyone to add or remove other inputs.">SINGLE|ANYONECANPAY</option>
 									</select>
 								</div>
@@ -1170,7 +1172,7 @@
 					<p class="text-muted">MultiSig.it created by <a href="https://twitter.com/tonklaus" target="_blank">tonklaus</a> with an open-source assist from the folks at <a href="https://github.com/OutCast3k/coinbin/">Coinbin</a>.</p>
 					<p class="text-muted">This page uses javascript to generate your addresses and sign your transactions within your browser, this means we <i>never</i> receive your private keys, this can be independently verified by reviewing the source code on <a href="https://github.com/toneloc/multisigit" target="_blank">github</a>. You can also download this page and host it yourself or run it offline!</p>
 					<br>
-					<p class="text-muted">Technical information can be found <a href="https://bitcoin.org/en/glossary/p2sh-multisig">here.</a>. Another excellent deep-dive can be found <a href="http://www.soroushjp.com/2014/12/20/bitcoin-multisig-the-hard-way-understanding-raw-multisignature-bitcoin-transactions/">here</a>You can also download this page and host it yourself or run it offline!</p>
+					<p class="text-muted">Technical information can be found <a href="https://bitcoin.org/en/glossary/p2sh-multisig">here.</a>. Another excellent deep-dive can be found <a href="http://www.soroushjp.com/2014/12/20/bitcoin-multisig-the-hard-way-understanding-raw-multisignature-bitcoin-transactions/">here</a>.You can also download this page and host it yourself or run it offline.</p>
 					<br>
 
 				</div>
